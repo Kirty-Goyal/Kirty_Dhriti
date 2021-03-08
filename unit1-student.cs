@@ -77,9 +77,20 @@ namespace CodeReview1
             this.skills = skills;
         }
 
-        public static void main(String[] args)
-        {
-           
-        }
-    }
- }
+      public static void main(String args[]) 
+      {
+        //creating objects for student class
+        Student S1 = new Student("Kirty", 1, 56.3, {"JAVA", "HTML","CSS"}); 
+        Student S2 = new Operations("Aditi", 2, 87.4, {"C++","Python"});
+        Student S3 = new DisplayOperations("Dhriti", 3, 75.8, {"PANDAS", "Ruby"});
+        Student S4 = new DisplayOperations("Yati", 4);
+        Student S5 = new Student( 5);
+        //calling methods of Operations class
+        S2.changeName("Priya");
+        S2.addSkill();
+        //calling methods of DisplayOperatios class
+        S5.showAttributes();
+        S1.showName();
+        S2.showDifference(S3);
+      }
+}
